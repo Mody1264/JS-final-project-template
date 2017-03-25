@@ -60,9 +60,9 @@ function draw(){
 	ctx.fillText("Points:"+ Points,120,32);
 	if(HP <=0){
         clearInterval(intervalID);
-        ctx.font = "24px Arial";
+        ctx.font = "64px Arial";
         ctx.fillStyle = "blue";
-        ctx.fillText("Game over",109,32);
+        ctx.fillText("Game over",32*6,32*4);
 	}
 }
 
