@@ -90,7 +90,7 @@ var enemyPath = [
 function Enemy () {
 	this.x=64,
 	this.y=480-32,
-	this.hp = 10000000;
+	this.hp = 100;
 	this.speedX=0,
 	this.speedY=64,
 	this.pathDes=0, 
@@ -168,9 +168,9 @@ this.shoot = function(id){
 		ctx.stroke();
 		enemies[id].hp-=this.damage;
 	};
-this.fireRate= 0.000000000000000000000000001;
-this.readyToShootTime =0.00000000000000000000000000001;
-this.damage=1000000000000000000000000000;
+this.fireRate= 0.1;
+this.readyToShootTime =0.1;
+this.damage=5;
 }
 var towers=[];
 $("#game-canvas").on("mousemove", mousemove);
